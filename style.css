@@ -1,0 +1,128 @@
+/* Body background and fonts */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 40px;
+  background: linear-gradient(to right, #f7e1ec, #e3f2fd);
+  min-height: 100vh;
+}
+
+/* Heading with Google Font */
+h1 {
+  font-family: 'Pacifico', cursive;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+/* Input and Button container */
+.input-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Input box styling */
+input {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid #90caf9;
+  border-radius: 6px 0 0 6px;
+  outline: none;
+  transition: 0.3s;
+  width: 250px;
+}
+
+input:focus {
+  border-color: #952e44;
+  box-shadow: 0 0 5px rgba(66, 165, 245, 0.5);
+}
+
+/* Button styling */
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 0 6px 6px 0;
+  background: #424bf5;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #1e88e5;
+}
+
+
+/*List styling*/ 
+ul {
+  list-style-type: none;
+  padding: 0;
+  max-width: 500px;
+  margin: auto;
+}
+
+li {
+  background: #fff;
+  margin: 8px 0;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  border: 2px solid #90caf9; /* Nice subtle border */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+li:hover {
+  border-color: #42a5f5; /* Highlight border on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+.buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.edit-input {
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #90caf9;
+  border-radius: 4px;
+}
+
+/* Remove button (Red) */
+.remove-btn {
+  background-color: #f44336; /* Red */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background-color: #d32f2f; /* Darker red on hover */
+}
+
+/* Edit/Save button (Green) */
+.edit-btn {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-btn:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+
