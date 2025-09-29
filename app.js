@@ -1,5 +1,5 @@
 // Cache DOM elements
-const input = document.getElementById("itemInput");
+const input = document.querySelector("#itemInput");
 const addBtn = document.getElementById("addBtn");
 const list = document.getElementById("shoppingList");
 
@@ -31,6 +31,14 @@ function addItem(text) {
   const btnDiv = document.createElement("div");
   btnDiv.classList.add("buttons");
 
+   // Remove button
+  const removeBtn = document.createElement("button");
+  removeBtn.textContent = "Remove";
+  removeBtn.classList.add("remove-btn");  // Add red styling
+  removeBtn.addEventListener("click", () => {
+    li.remove();
+  });
+
   // Edit button
   const editBtn = document.createElement("button");
   editBtn.textContent = "Edit";
@@ -56,17 +64,12 @@ function addItem(text) {
     }
   });
 
-  // Remove button
-  const removeBtn = document.createElement("button");
-  removeBtn.textContent = "Remove";
-  removeBtn.classList.add("remove-btn");  // Add red styling
-  removeBtn.addEventListener("click", () => {
-    li.remove();
-  });
+ 
 
   // Append buttons
-  btnDiv.appendChild(editBtn);
   btnDiv.appendChild(removeBtn);
+  btnDiv.appendChild(editBtn);
+  
 
   li.appendChild(span);
   li.appendChild(btnDiv);
